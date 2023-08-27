@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="details">
+            <div class="track-number">
+                PLAYING x OF y
+            </div>
+            <div class="track-album">
+                <img id="track-art" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcOftyvbwOrbDL8Z2po2CA-0VoAyFoXB6nqQ&usqp=CAU" alt="">
+            </div>
+            <div class="track-name">
+                Track Name
+            </div>
+            <div class="track-artist">
+                Track Artist
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="previous" onclick="prevTrack()">
+                <i class="fa-solid fa-backward-step"></i>
+            </div>
+            <div class="play-pause" onclick="playPause()">
+                <i class="fa-solid fa-circle-play"></i>
+            </div>
+            <div class="next" onclick="nextTrack()">
+                <i class="fa-solid fa-forward-step"></i>
+            </div>
+        </div>
+        <div class="sliders">
+            <div class="seek-slider">
+                <div class="current">00.00</div>
+                <input type="range" max="100" min="0" value="0" class="seek" onchange="seekChange()">
+                <div class="duration"></div>
+            </div>
+            <div class="volume-slider">
+                <i class="fa-solid fa-volume-low"></i>
+                <input type="range" max="100" min="1" value="50" class="volume" onchange="updateVolume()">
+                <i class="fa-solid fa-volume-high"></i>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/d7706770d3.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
