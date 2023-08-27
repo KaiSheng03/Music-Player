@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #46FE97;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 60%;
+}
+
+.container .details{
+    text-align: center;
+}
+
+.container .details .track-number{
+    margin: 10px;
+}
+
+.container .details .track-album{
+    margin: 10px;
+}
+
+.container .details .track-album img{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.container .details .track-name{
+    margin: 10px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.container .details .track-artist{
+    font-size: 20px;
+}
+
+.container .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.container .buttons div{
+    margin: 0px 20px;
+}
+
+.container .buttons .previous , .next{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.container .buttons .play-pause{
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.container .sliders .seek-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .sliders .seek-slider input{
+    width: 200px;
+    margin: 5px;
+}
+.container .sliders .volume-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .sliders .volume-slider input{
+    width: 120px;
+    margin: 5px;
+}
